@@ -1,0 +1,48 @@
+object Form1: TForm1
+  Left = 520
+  Height = 240
+  Top = 145
+  Width = 404
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'List all Serial Port V1.0 29/06/2025 16:15:11'
+  ClientHeight = 240
+  ClientWidth = 404
+  Position = poWorkAreaCenter
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
+  object ComboBox1: TComboBox
+    Left = 88
+    Height = 23
+    Top = 22
+    Width = 128
+    ItemHeight = 15
+    ReadOnly = True
+    TabOrder = 0
+    OnEditingDone = ComboBox1EditingDone
+  end
+  object Button1: TButton
+    Left = 88
+    Height = 33
+    Top = 48
+    Width = 81
+    Caption = 'Refresh Port'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Left = 240
+    Height = 210
+    Top = 8
+    Width = 142
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 2
+  end
+  object SerialPortDriver1: TSerialPortDriver
+    Timeout = 100
+    AcceptAnyPortName = True
+    Left = 18
+    Top = 17
+  end
+end
