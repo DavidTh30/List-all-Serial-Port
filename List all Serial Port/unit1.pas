@@ -116,6 +116,7 @@ begin
   finally
     reg.Free;
     v.Free;
+    l.Free;
   end; // try ...
 end;
 

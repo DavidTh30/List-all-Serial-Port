@@ -5,11 +5,11 @@ object Form1: TForm1
   Width = 404
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'List all Serial Port V1.0 29/06/2025 16:15:11'
+  Caption = 'List all Serial Port V1.011/08/2026 16:15:11'
   ClientHeight = 240
   ClientWidth = 404
   Position = poWorkAreaCenter
-  LCLVersion = '4.0.0.4'
+  LCLVersion = '4.4.0.0'
   OnCreate = FormCreate
   object ComboBox1: TComboBox
     Left = 88
